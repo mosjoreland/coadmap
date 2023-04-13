@@ -10,3 +10,11 @@
 * I added flex boxes to the content to give them a desired layout that is visually appealing
 * Added hover effect to content to give a little flare to the content 
 * Will add media queries to make the website responsive to different types of display screens
+
+## Images
+Screenshot of the full webpage
+![Full website image](./images/coadmapSS.png)
+
+## Link to website and repo
+* [Click here!](https://mosjoreland.github.io/coadmap/) to take a look at the website.
+* [Click here!](https://github.com/mosjoreland/coadmap) to take a look at the github repo.

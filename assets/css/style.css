@@ -128,9 +128,10 @@ section div {
 }
 /* applying the border around the images and the position of them */
 #first {
-    background-image: url("https://images.unsplash.com/photo-1604818640599-71bda0165d53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80");
+    background-image: url("https://i.gifer.com/7gRp.gif");
+    background-repeat: no-repeat;
     border: solid var(--off-white) 3px;
-    object-fit: cover;
+    background-size: cover;
     background-position: center;
 }
 
