@@ -12,8 +12,12 @@
 * Will add media queries to make the website responsive to different types of display screens
 
 ## Images
-Screenshot of the full webpage
-![Full website image](./images/coadmapSS.png)
+Screenshots of the webpage
+![Website screenshot](./images/Screenshot%202023-04-14%20at%207.58.05%20PM.png)
+
+![Website screenshot](./images/Screenshot%202023-04-14%20at%207.58.15%20PM.png)
+
+![Website screenshot](./images/Screenshot%202023-04-14%20at%207.58.19%20PM.png)
 
 ## Link to website and repo
 * [Click here!](https://mosjoreland.github.io/coadmap/) to take a look at the website.
