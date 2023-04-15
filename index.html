@@ -1,91 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coadmap</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header class="header">
-        <h1>COADMAP</h1>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#projects">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-            </nav>
-    </header>
-    <figure class="hero"> </figure>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="container-fluid align-items-center">
+        <span id="nav-name" class="navbar-brand mb-0 h1">COADMAP</span>
+        <ul id="nav-items" class="d-flex">
+          <li style="list-style-type: none" class="p-2">
+            <a class="text-decoration-none nav-items" href="#intro-hd">About Me</a>
+          </li>
+          <li style="list-style-type: none" class="p-2">
+            <a class="text-decoration-none nav-items" href="#work-hd">Work</a>
+          </li>
+          <li style="list-style-type: none" class="p-2">
+            <a class="text-decoration-none nav-items" href="#contact-hd">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <main>
-        <section>
-            <header>
-                <h2 id="about-me">About Me</h2>
-            </header>
-                <div class="section-content">
-                    <p> My name is Joseph Moreland, but the people that really know me call me by my middle name, Kawai.
-                        The point of this website is for you to get to know me and my work, so we could start off by you getting
-                        to know how I prefer to be addressed. I'm a 23 year old aspringing web developer based in Downtown Los Angeles.
-                        I've always been intrigued by the way user interfaces are designed and decided to take my interest further by 
-                        learning how they operate. I have always had a love for art, and expressed my interest through editing photos 
-                        and videos I would take for fun. I now wish to apply this interest technically, through web development and design. 
-                        Here you will soon find some of my favorite works of art that I have created. Please enjoy and express any interest 
-                        you have by contacting me through the links towards the bottom of the page!
-                    </p>
-                    <img src="./images/portolio-img.jpeg" alt="photo of Joseph on a bike">
-                </div>
-        </section>
-        <section>
-            <header>
-                <h2 >Work</h2>
-            </header>
-                <div id="projects">
-                    <a id="first" href="https://repopanda.github.io/spin-the-globe/">
-                        <div>
-                            <h3 class="text-box-1">Spin The Globe</h3>
-                        </div>
-                    </a>
-                    <a id="second" href="">
-                        <div>
-                            <h3 class="text-box">Project Name</h3>
-                        </div>
-                    </a>
-                    <a id="third" href="">
-                        <div>
-                            <h3 class="text-box">Project Name</h3>
-                        </div>
-                    </a>
-                    <a id="fourth" href="">
-                        <div>
-                            <h3 class="text-box">Project name</h3>
-                        </div>
-                    </a>
-                    <a id="fifth" href="">
-                        <div>
-                            <h3 class="text-box">Project Name</h3>
-                        </div>
-                    </a>
-                </div>
-        </section>
-        <section>
-            <header>
-                <h2>Contact Me</h2>
-            </header>
-                <div class="contact-content">
-                    <a href="mailto:jkw.42699@gmail.com">Email</a>
-                    <a href="https://www.instagram.com/kaavaai/">Instagram</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="https://www.youtube.com/channel/UCiWx1M3PypmIMSr1ZWhhJVg">Youtube</a>
-                </div>
-        </section>
-        <footer>
-            <h4>
-                Thanks for stopping by
-            </h4>
-        </footer>
+      <section class="container-fluid">
+        <div id="intro" class="row p-5 align-items-center justify-content-around">
+          <div class="col-lg-4 col-md-5 col-sm-4">
+            <img
+              id="self"
+              class="img-responsive"
+              src="./images/portolio-img.jpeg"
+              alt="photo of joseph" />
+          </div>
+          <div id="intro-text" class="col-lg-5 col-md-7 col-sm-12 position-relative">
+            <h2 id="intro-hd" class="text-center" id="about-me">Who I Am</h2>
+            <p id="intro-p" class="text-center">
+              My name is Joseph Moreland, but the people that really know me call me by my middle
+              name, Kawai. The point of this website is for you to get to know me and my work, so we
+              could start off by you getting to know how I prefer to be addressed. I'm a 23 year old
+              aspringing web developer based in Downtown Los Angeles. I've always been intrigued by
+              the way user interfaces are designed and decided to take my interest further by
+              learning how they operate. I have always had a love for art, and expressed my interest
+              through editing photos and videos I would take for fun. I now wish to apply this
+              interest technically, through web development and design. Here you will soon find some
+              of my favorite works of art that I have created. Please enjoy and express any interest
+              you have by contacting me through the links towards the bottom of the page!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row p-5 align-items-center justify-content-end">
+          <div class="col-lg-4">
+            <h2 id="work-hd" class="text-center">Work</h2>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-6 mt-4 position-relative">
+            <a
+              id="first"
+              class="text-decoration-none position-absolute"
+              href="https://repopanda.github.io/spin-the-globe/">
+              <h3 id="globe-txt">Spin The Globe</h3>
+            </a>
+            <img
+              id="globe-img"
+              class="img-responsive"
+              src="./images/globe-img.jpg"
+              alt="pixel placeholder" />
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 position-relative">
+            <a
+              id="first"
+              class="text-decoration-none position-absolute"
+              href="#">
+              <h3 id="globe-txt">Project</h3>
+            </a>
+            <img
+              id="globe-img"
+              class="img-responsive"
+              src="./images/pixel-placeholder.jpg"
+              alt="pixel placeholder" />
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 position-relative">
+            <a
+              id="first"
+              class="text-decoration-none position-absolute"
+              href="#">
+              <h3 id="globe-txt">Project</h3>
+            </a>
+            <img
+              id="globe-img"
+              class="img-responsive"
+              src="./images/pixel-placeholder.jpg"
+              alt="pixel placeholder" />
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 position-relative">
+            <a
+              id="first"
+              class="text-decoration-none position-absolute"
+              href="#">
+              <h3 id="globe-txt">Project</h3>
+            </a>
+            <img
+              id="globe-img"
+              class="img-responsive"
+              src="./images/pixel-placeholder.jpg"
+              alt="pixel placeholder" />
+          </div>
+          
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-4">
+            <h2 id="contact-hd">Contact Me</h2>
+          </div>
+          <div class="col-lg-8 d-flex m-3 justify-content-between">
+            <a class="text-decoration-none contact-link" href="mailto:jkw.42699@gmail.com">Email</a>
+            <a class="text-decoration-none contact-link" href="https://www.instagram.com/kaavaai/">Instagram</a>
+            <a class="text-decoration-none contact-link" href="#">LinkedIn</a>
+            <a class="text-decoration-none contact-link" href="https://www.youtube.com/channel/UCiWx1M3PypmIMSr1ZWhhJVg">Youtube</a>
+          </div>
+          <footer class="text-center pt-5 pb-5">
+            <h3>Thanks for stopping by</h3>
+          </footer>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>

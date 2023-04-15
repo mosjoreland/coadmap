@@ -1,193 +1,116 @@
-* {
-    box-sizing: border-box;
-}
-/* added variables fpr multi use colors */
 :root {
-    --dark-grey: rgb(50, 50, 50);
-    --purple: rgb(183, 0, 255);
-    --off-white: rgb(246, 228, 255);
+    --light-pink: rgba(225, 109, 206, 0.60);
+    --main-font-family: 'Teko', sans-serif;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:  var(--dark-grey);
-    color: var(--purple);
-    margin: 0px;
-}
-/* adding different background color to the header section */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px 10%;
-    background-color: black;
-}
-/* adding a different color as a background for the h1 of the header*/
-h1 {
-    background-color: var(--dark-grey);
-    padding: 5px 10px 5px 60px;
-    margin-left: -145px;
-    font-size: 38px;
-}
-/* aligning the nav links */
-nav a {
-    color: var(--purple);
-    padding: 2px;
-    text-decoration: none;
-    text-align: center;
-    border-bottom: solid var(--purple) 4px;
-}
-
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0px 20px;
-    
-}
-
-.hero {
-    height: 175px;
-    width: 100%;
-    margin: 0px;
-    background-image: url("https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
-    object-fit: cover;
-}
-/* declaring the display flex property to the section */
-section {
-    display: flex;
-    margin: 10px 150px 10px -10px;
-}
-/* declaring the portion of the screen the section header takes up,
-and adding a border to give a dividing line between the content and header,
-setting the margin to add space between content */
-section header {
-    flex-basis: 25%;
-    border-right: solid black 3px;
-    margin-right: 20px;
-    text-align: right;
-    padding-right: 2%;
-    font-size: 28px;
-}
-/* setting the portion of the screen that the section div conent takes up */
-section div {
-    flex-basis: 75%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-/* declaring the space between paragraph and and the image of the seciton content class*/
-.section-content {
-    color: var(--off-white);
-    padding: 0 10px 0;
-}
-
-.section-content img {
-    max-height: 175px;
-    width: 50%;
-    border: solid var(--off-white) 3px;
-}
-/* added the flexbox for the content in the projects divs */
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-/* setting the layout for the smaller content boxes, also added a transition ease to give a hover effect later on */ 
-#projects a {
-    background-color: var(--purple);
-    flex-basis: 48%;
-    height: 150px;
-    text-decoration: none;
-    color: var(--purple);
-    margin: 8px;
-    transition: 0.5s ease;
-}
-/* setting the display of the titles of project 1 */
-.text-box-1 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--off-white);
-    margin: 300px 820px 0px 0px;
-    padding: 8px;
-    font-size: 22px;
-    text-align: center;
-}
-/* setting the display of the titles of the projects */
-.text-box {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--off-white);
-    margin: 75px 350px 0px 0px;
-    padding: 6px;
-    text-align: center;
-}
-/* setting the layout for the main content box */
-#projects a:first-child {
-    flex-basis: 100%;
-    height: 400px;
-}
-/* applying the border around the images and the position of them */
-#first {
-    background-image: url("https://i.gifer.com/7gRp.gif");
+main {
+    background: rgb(169, 0, 254);
+    background: linear-gradient(100deg,
+            rgb(82, 154, 247) 5%,
+            rgba(230, 6, 28, 0.96) 35%,
+            rgb(82, 154, 247) 100%);
     background-repeat: no-repeat;
-    border: solid var(--off-white) 3px;
-    background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
 }
 
-#second {
-    background-image: url("https://images.unsplash.com/photo-1655720406770-12ea329b5b61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80");
-    border: solid var(--off-white) 3px;
-    object-fit: cover;
-    background-position: right;
+#navbar {
+    background: rgb(169, 0, 254);
+    background: linear-gradient(100deg,
+            rgb(82, 154, 247) 5%,
+            rgba(230, 6, 28, 0.96) 35%,
+            rgb(82, 154, 247) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-#third {
-    background-image: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
-    border: solid var(--off-white) 3px;
-    object-fit: cover;
-    background-position: left;
+#intro-text {
+    background: radial-gradient(ellipse,
+            rgb(225, 109, 206) 4%,
+            rgb(225, 109, 206) 2%,
+            rgb(225, 109, 206) 1%,
+            rgba(6, 6, 6, 0) 60%);
+    color: rgb(0, 0, 0);
 }
 
-#fourth {
-    background-image: url("https://images.unsplash.com/photo-1531124448996-ffe8d56777ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
-    border: solid var(--off-white) 3px;
-    object-fit: cover;
-    background-position: left;
+#self {
+    border: solid var(--light-pink) 5px;
+    width: 100%;
 }
 
-#fifth {
-    background-image: url("https://images.unsplash.com/photo-1628444739364-4890bf7b3c85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80");
-    border: solid var(--off-white) 3px;
-    object-fit: cover;
-    background-position: center;
-}
-/* added a hover effect to slighltly enlarge content when hovering over */
-#projects a:hover {
-    transform: scale(1.02);
-}
-/* applying flex to the contact contents and adjusting the display */
-.contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+#nav-name {
+    font-family: var(--main-font-family);
+    color: rgb(0, 0, 0);
+    font-size: 52px;
 }
 
-.contact-content a {
-    font-size: 28px;
-    text-decoration: none;
-    color: var(--off-white);
-    border-bottom: solid var(--off-white) 3px;
+.nav-items {
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
 }
 
-footer {
-    text-align: center;
-    font-size: 22px;
+#intro-hd {
+    font-family: var(--main-font-family);
+    color: rgb(0, 0, 0);
+    font-size: 52px;
 }
-/* unfinished media screen to make repsonsive */
-@media screen and (max-width: 768px) {
-    #projects {
-        flex-direction: column;
+
+#intro-p {
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+#work-hd {
+    font-family: var(--main-font-family);
+    color: rgb(0, 0, 0);
+    font-size: 52px;
+    transform: rotate(270deg);
+}
+
+#globe-img {
+    border: solid var(--light-pink) 5px;
+    width: 100%;
+}
+
+#globe-txt {
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background-color: var(--light-pink);
+    display: inline-block;
+    padding: 5px;
+    margin-top: 15%;
+}
+
+#contact-hd {
+    font-family: var(--main-font-family);
+    color: rgb(0, 0, 0);
+    font-size: 52px;
+}
+
+.contact-link {
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+footer h3 {
+    font-family: var(--main-font-family);
+    color: rgb(0, 0, 0);
+    font-size: 52px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 991px) {
+    #work-hd {
+        font-family: var(--main-font-family);
+        color: rgb(0, 0, 0);
+        font-size: 52px;
+        transform: rotate(0deg);
     }
 }
